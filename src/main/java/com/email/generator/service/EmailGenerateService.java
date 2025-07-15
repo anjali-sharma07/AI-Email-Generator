@@ -62,18 +62,7 @@ public class EmailGenerateService {
             return "Error: " + e.getMessage();
         }
     }
-/*
-    private String buildPrompt(EmailRequest request){
-        StringBuilder prompt = new StringBuilder();
-        prompt.append("Write a professional email answer according to the email I get.");
-        if(request.getTone() != null && !request.getTone().isEmpty()){
-            prompt.append("According to the following tone, generate an email")
-                    .append(request.getTone())
-                    .append("tone");
-        }   prompt.append("\n Original Email Request: \n")
-                    .append(request.getEmailContent());
-        return prompt.toString();
-    }*/
+
 private String buildPrompt(EmailRequest request) {
     StringBuilder prompt = new StringBuilder();
 
